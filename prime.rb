@@ -4,3 +4,7 @@ def prime?(num)
   end
   true
 end
+
+
+def prime?(num)
+  
