@@ -1,4 +1,15 @@
-def is_prime?(num)
-  return if num <= 1
-  (2..Math.sqrt(num)).none? { |i| (num % i).zero? }
+def prime?(number)
+  range = (2..(number - 1)).to_a
+  check = true
+  if number < 2
+    check = false
+  else
+    range.each do |x|
+      if number % x == 0
+        check = false
+        break
+      end
+    end
+  end
+   puts check
 end
