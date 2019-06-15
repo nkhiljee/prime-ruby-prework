@@ -1,17 +1,11 @@
-
-
-def isPrime(number)
-    if number == 0 or number == 1
-        return false
-    end
-    i = 2
-    limit = number / i
-    while i < limit
-        if number % i == 0
-            return false
-        end
-        i += 1
-        limit = number / i
-    end
-    return true
+ def primetest
+ for test_value in [2, 3, 5, 7, 9, 11, 13] do
+  if (@nth_value % test_value) == 0
+   puts ("#{@nth_value} is not divisible by #{test_value}")
+  else
+   puts ("This is not a prime number since this is divisible by #{test_value}")
+  break
+  end
+ end
+ end
 end
