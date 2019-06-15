@@ -7,4 +7,5 @@ end
 
 
 def prime?(num)
+  false if num < 2
   
