@@ -8,4 +8,5 @@ end
 
 def prime?(num)
   false if num < 2
-  (2 .. num)
+  (2 .. num).each do |factor|
+    
