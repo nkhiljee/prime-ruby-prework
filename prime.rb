@@ -8,4 +8,4 @@ end
 
 def prime?(num)
   false if num < 2
-  
+  (2 .. num)
