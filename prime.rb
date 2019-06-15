@@ -1,6 +1,6 @@
 def prime?(num)
   # check if num is less than 2.
-  false if ( num < 2 || num = -num)
+  false if ( num < 2 || num != num.abs)
   
   # check if num is divisible by any number
   # between 2 to (num - 1)
