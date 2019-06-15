@@ -1,6 +1,15 @@
-def prime(num)
-  (2..(num - 1)).each do |n|
-    return false if (num % n == 0)
+def prime?(num)
+  # check if num is less than 2.
+  false if num < 2
+  
+  # check if num is divisible by any number
+  # between 2 to (num - 1)
+  # return false on the first instance
+  (2...num).each do |factor|
+    if (num % factor).zero? 
+      return false
+    end
   end
-  true
+  
+  true # after checking all numbers and not receiving false
 end
